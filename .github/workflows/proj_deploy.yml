@@ -26,7 +26,7 @@ jobs:
 
     - name: Run Tests with 100% Coverage Enforcement
       run: |
-        pytest --cov=app --cov=ml_model tests/ --cov-report xml --cov-fail-under=100
+        PYTHONPATH=. pytest --cov=app --cov=ml_model tests/ --cov-report xml --cov-fail-under=100
 
     - name: Upload Coverage Report
       uses: actions/upload-artifact@v4
