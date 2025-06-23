@@ -1,0 +1,16 @@
+# Ignore Python cache and compiled files
+tests/__pycache__/
+*.pyc
+*.pyo
+
+myenv/
+
+htmlcov/
+
+__pycache__/
+
+.coverage
+
+iris_model.pkl
+
+.pytest_cache
