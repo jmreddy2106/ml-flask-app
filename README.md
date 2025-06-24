@@ -3,6 +3,7 @@
 1. mkdir ml-flask-app
 
 2. create empty dirs and files
+
 		ml-flask-app/
 		├── .github/
 		│   └── workflows/
