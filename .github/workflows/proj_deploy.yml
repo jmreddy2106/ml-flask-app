@@ -39,9 +39,8 @@ jobs:
           path: coverage.xml
 
       - name: Run SonarQube Scan
-        uses: SonarSource/sonarqube-scan-action@v2.0.2
+        uses: SonarSource/sonarqube-scan-action@v2.0.2                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
         env:
-          GIT_TOKEN: ${{ secrets.GIT_TOKEN }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
         with:
@@ -52,6 +51,4 @@ jobs:
             -Dsonar.language=py
             -Dsonar.tests=tests
             -Dsonar.python.coverage.reportPaths=coverage.xml
-            -Dsonar.branch.name=${{ github.head_ref || github.ref_name }}
             -X 
-        
